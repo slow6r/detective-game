@@ -130,29 +130,10 @@ export const Form = () => {
             Отправить
           </Button>
         </div>
-        {pdfDownloaded && (
-          <div className={styles.hint}>
-            Книга "Маленький принц" скачана. Найдите в нём код.
-          </div>
-        )}
-        {roseDownloaded && (
-          <div className={styles.hint}>
-            Книга "Роза" скачана. Найдите в ней код.
-          </div>
-        )}
       </div>
       <div
         className={`${styles.block} ${!envelope4Unlocked ? styles.locked : ""}`}
       >
-        {/* <div className={styles.button__convert3} onClick={downloadRose}>
-          <Button onClick={handleEnvelope4Submit}>Конверт №4</Button>
-          <img
-            src={downloadIcon}
-            alt="Скачать PDF"
-            title="Скачать файл"
-            className={roseDownloaded ? styles.downloadedIcon : ""}
-          />
-        </div> */}
         <div className={styles.inputWrapper}>
           <Input
             placeholder="Введите код №2"
@@ -169,11 +150,6 @@ export const Form = () => {
             Отправить
           </Button>
         </div>
-        {roseDownloaded && (
-          <div className={styles.hint}>
-            Файл "Rose" скачан. Найдите в нём код.
-          </div>
-        )}
       </div>
 
       {showModal && (
