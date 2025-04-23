@@ -146,16 +146,59 @@
   .form {
     width: 90%;
     max-width: 600px;
-    padding: 2rem;
+    padding: 1.5rem;
+    gap: 1.5rem;
   }
 
   .block {
-    padding: 1.2rem;
+    padding: 1rem;
+    gap: 1rem;
   }
 
   .modal {
     width: 95%;
-    padding: 1.5rem;
+    padding: 1.2rem;
+  }
+
+  .modal p {
+    font-size: 1rem;
+  }
+
+  .inputWrapper {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .inputWrapper input {
+    width: 100%;
+  }
+
+  .submitButton {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .block {
+    padding: 0.8rem;
+  }
+
+  .modal {
+    padding: 1rem;
+  }
+
+  .modal p {
+    font-size: 0.9rem;
+  }
+
+  .hint {
+    font-size: 0.7rem;
   }
 }
 
