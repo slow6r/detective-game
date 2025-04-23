@@ -85,16 +85,16 @@ export const Form = () => {
     }
   };
 
-  const resetCache = () => {
-    localStorage.removeItem("envelope4Unlocked");
-    localStorage.removeItem("pdfDownloaded");
-    localStorage.removeItem("roseDownloaded");
-    setEnvelope4Unlocked(false);
-    setPdfDownloaded(false);
-    setRoseDownloaded(false);
-    setCode("");
-    setCode4("");
-  };
+  // const resetCache = () => {
+  //   localStorage.removeItem("envelope4Unlocked");
+  //   localStorage.removeItem("pdfDownloaded");
+  //   localStorage.removeItem("roseDownloaded");
+  //   setEnvelope4Unlocked(false);
+  //   setPdfDownloaded(false);
+  //   setRoseDownloaded(false);
+  //   setCode("");
+  //   setCode4("");
+  // };
 
   const handleKeyPress = (e, handler) => {
     if (e.key === "Enter") {
@@ -207,9 +207,9 @@ export const Form = () => {
         </div>
       )}
 
-      <button className={styles.resetButton} onClick={resetCache}>
+      {/* <button className={styles.resetButton} onClick={resetCache}>
         Сбросить прогресс
-      </button>
+      </button> */}
     </div>
   );
 };
