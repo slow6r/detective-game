@@ -106,7 +106,7 @@ export const Form = () => {
     <div className={styles.form}>
       <div className={styles.block}>
         <div className={styles.button__convert3} onClick={downloadPdf}>
-          <Button onClick={handleEnvelope3Submit}>Конверт №1</Button>
+          <Button onClick={handleEnvelope3Submit}>Конверт №2</Button>
           <img
             src={downloadIcon}
             alt="Скачать PDF"
@@ -115,7 +115,7 @@ export const Form = () => {
           />
         </div>
         <div className={styles.button__convert3} onClick={downloadRose}>
-          <Button onClick={handleEnvelope3Submit}>Конверт №2</Button>
+          <Button onClick={handleEnvelope3Submit}>Конверт №3</Button>
           <img
             src={downloadIcon}
             alt="Скачать PDF"
