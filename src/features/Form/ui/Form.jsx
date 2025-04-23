@@ -96,12 +96,6 @@ export const Form = () => {
   //   setCode4("");
   // };
 
-  const handleKeyPress = (e, handler) => {
-    if (e.key === "Enter") {
-      handler();
-    }
-  };
-
   return (
     <div className={styles.form}>
       <div className={styles.block}>
@@ -128,7 +122,6 @@ export const Form = () => {
             placeholder="Введите код №1"
             value={code}
             onChange={(e) => setCode(e.target.value)}
-            onKeyPress={(e) => handleKeyPress(e, handleEnvelope3Submit)}
           />
           <Button
             onClick={handleEnvelope3Submit}
@@ -166,7 +159,6 @@ export const Form = () => {
             value={code4}
             onChange={(e) => setCode4(e.target.value)}
             disabled={!envelope4Unlocked}
-            onKeyPress={(e) => handleKeyPress(e, handleEnvelope4Submit)}
           />
           {!envelope4Unlocked && <div className={styles.lockIcon}>🔒</div>}
           <Button
