@@ -177,12 +177,13 @@
   .inputWrapper input {
     width: 100%;
     padding-right: 30px;
+    position: relative;
   }
 
   .lockIcon {
     right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 25px;
+    transform: none;
   }
 
   .submitButton {
