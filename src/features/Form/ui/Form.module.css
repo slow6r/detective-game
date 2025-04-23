@@ -70,18 +70,19 @@
   gap: 10px;
   justify-content: space-between;
   width: 100%;
+  position: relative;
 }
 
 .inputWrapper input {
   flex: 2;
   width: 100%;
-  padding-right: 30px;
+  padding-right: 40px;
   height: 40px;
 }
 
 .lockIcon {
   position: absolute;
-  right: 10px;
+  right: 20px;
   top: 50%;
   transform: translateY(-50%);
   font-size: 20px;
@@ -177,12 +178,12 @@
 
   .inputWrapper input {
     width: 100%;
-    padding-right: 30px;
+    padding-right: 40px;
     height: 40px;
   }
 
   .lockIcon {
-    right: 10px;
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
   }
