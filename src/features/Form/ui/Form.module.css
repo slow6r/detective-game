@@ -76,6 +76,7 @@
   flex: 2;
   width: 100%;
   padding-right: 30px;
+  height: 40px;
 }
 
 .lockIcon {
@@ -177,13 +178,13 @@
   .inputWrapper input {
     width: 100%;
     padding-right: 30px;
-    position: relative;
+    height: 40px;
   }
 
   .lockIcon {
     right: 10px;
-    top: 25px;
-    transform: none;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .submitButton {
