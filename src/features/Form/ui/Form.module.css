@@ -70,11 +70,15 @@
   gap: 10px;
   justify-content: space-between;
   width: 100%;
-  position: relative;
 }
 
-.inputWrapper input {
+.inputContainer {
+  position: relative;
   flex: 2;
+  width: 100%;
+}
+
+.inputContainer input {
   width: 100%;
   padding-right: 40px;
   height: 40px;
@@ -82,11 +86,11 @@
 
 .lockIcon {
   position: absolute;
-  right: 20px;
+  right: 12px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 20px;
-  color: #333;
+  font-size: 16px;
+  color: #666;
   pointer-events: none;
   z-index: 2;
 }
@@ -173,19 +177,20 @@
   .inputWrapper {
     flex-direction: column;
     gap: 0.5rem;
-    position: relative;
   }
 
-  .inputWrapper input {
+  .inputContainer {
+    width: 100%;
+  }
+
+  .inputContainer input {
     width: 100%;
     padding-right: 40px;
     height: 40px;
   }
 
   .lockIcon {
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    right: 12px;
   }
 
   .submitButton {

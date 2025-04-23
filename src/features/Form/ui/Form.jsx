@@ -135,13 +135,15 @@ export const Form = () => {
         className={`${styles.block} ${!envelope4Unlocked ? styles.locked : ""}`}
       >
         <div className={styles.inputWrapper}>
-          <Input
-            placeholder="Введите код №2"
-            value={code4}
-            onChange={(e) => setCode4(e.target.value)}
-            disabled={!envelope4Unlocked}
-          />
-          {!envelope4Unlocked && <div className={styles.lockIcon}>🔒</div>}
+          <div className={styles.inputContainer}>
+            <Input
+              placeholder="Введите код №2"
+              value={code4}
+              onChange={(e) => setCode4(e.target.value)}
+              disabled={!envelope4Unlocked}
+            />
+            {!envelope4Unlocked && <div className={styles.lockIcon}>🔒</div>}
+          </div>
           <Button
             onClick={handleEnvelope4Submit}
             className={styles.submitButton}
